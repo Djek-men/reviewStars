@@ -1,0 +1,73 @@
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  background: url('stars.png') no-repeat;
+}
+
+#reviewStars-input { 
+  *zoom: 1; 
+  position: relative;
+  float: left;
+}
+
+#reviewStars-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;	  
+  width: 43px;
+  height: 40px;	  
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+#reviewStars-input input:checked ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+#reviewStars-input label {
+  background-position: 0 0;
+  height: 40px;
+  width: 43px;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+.review-form__button{
+	margin-top: 40px;
+	display: inline-block;
+	font-family: arial,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: rgb(68,68,68);
+	text-decoration: none;
+	user-select: none;
+	padding: .2em 1.2em;
+	outline: none;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 2px;
+	background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+	transition: all .218s ease 0s;
+}
+.review-form__button:hover {
+	  color: rgb(24,24,24);
+	  border: 1px solid rgb(198,198,198);
+	  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+	  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	  cursor: pointer;
+}
+.review-form{
+	border-radius: 5px;
+	max-width: 265px;
+	text-align: center;
+	padding: 10px;
+}
